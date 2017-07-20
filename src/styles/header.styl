@@ -1,0 +1,74 @@
+@require './general.styl'
+
+.header-style {
+    background: $hard-black
+    font-size: 1rem
+    color: $white
+    padding: 1rem 0
+    margin: 0 auto
+    width: 100%
+}
+
+.header-nav {
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+    padding: 0 1rem
+    max-width: 1012px
+
+    .home-icon {
+        display: inline-block
+        height: 100%
+        vertical-align: middle
+        img {
+            width: 32px
+            height: 32px
+        }
+    }
+
+    .nav {
+        display: inline-block
+
+        a {
+            margin-left: 20px
+            text-align: center
+        }
+    }
+
+    .header-action {
+        display: block
+        position: relative
+        margin-left: auto
+
+        .search-input {
+            input[type='text'] {
+                background: rgba(255, 255, 255, 0.125)
+                border: none
+                margin-right: 10px
+                padding: 0 10px
+                width: 200px
+                min-height: 32px
+                border-radius: $item-border-radius
+
+                &::placeholder {
+                    color: $gray
+                    font-size: 0.95rem
+                }
+
+                &:focus {
+                    background: rgba(255, 255, 255, 0.176)
+                }
+            }
+
+        }
+
+        > span {
+            color: $darker-gary
+        }
+
+        a {
+            font-weight: 600
+        }
+    }
+}
