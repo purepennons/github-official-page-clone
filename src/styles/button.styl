@@ -1,0 +1,31 @@
+@require './general'
+
+$base-btn-color = $white
+$base-btn-font-color = $hard-black
+$base-btn-boder = 1px solid rgba(27, 31, 35, 0.2)
+$base-btn-boder-radius = 6px
+$base-btn-line-height = 1.2
+
+.btn {
+    color: $base-btn-font-color
+    border: $base-btn-boder
+    border-radius: $base-btn-boder-radius
+    line-height: $base-btn-line-height
+    background: $base-btn-color
+    padding: 0.75rem 1.25rem
+    vertical-align: middle
+    text-align: center
+    
+}
+
+.btn-primary {
+    color: $white
+    background: $green
+    background-image: linear-gradient(-180deg, $light-green, $green)
+    font-weight: 600
+}
+
+.btn-warning {
+    color: black
+    background: yellow
+}

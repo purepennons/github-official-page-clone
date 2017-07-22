@@ -1,4 +1,4 @@
-@require './general.styl'
+@require './general'
 
 .header-style {
     background: $hard-black
@@ -7,6 +7,10 @@
     padding: 1rem 0
     margin: 0 auto
     width: 100%
+
+    a {
+        color: $white
+    }
 }
 
 .header-nav {
@@ -21,9 +25,9 @@
         display: inline-block
         height: 100%
         vertical-align: middle
-        img {
-            width: 32px
-            height: 32px
+
+        svg {
+            fill: currentColor
         }
     }
 
@@ -41,26 +45,23 @@
         position: relative
         margin-left: auto
 
-        .search-input {
-            input[type='text'] {
-                background: rgba(255, 255, 255, 0.125)
-                border: none
-                margin-right: 10px
-                padding: 0 10px
-                width: 200px
-                min-height: 32px
-                border-radius: $item-border-radius
+        input[type='text'] {
+            background: rgba(255, 255, 255, 0.125)
+            border: none
+            margin-right: 10px
+            padding: 0 10px
+            width: 200px
+            min-height: 32px
+            border-radius: $item-border-radius
 
-                &::placeholder {
-                    color: $gray
-                    font-size: 0.95rem
-                }
-
-                &:focus {
-                    background: rgba(255, 255, 255, 0.176)
-                }
+            &::placeholder {
+                color: $gray
+                font-size: (13rem/16)
             }
 
+            &:focus {
+                background: rgba(255, 255, 255, 0.176)
+            }
         }
 
         > span {

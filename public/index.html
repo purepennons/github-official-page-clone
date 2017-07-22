@@ -8,6 +8,7 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
@@ -25,7 +26,8 @@
     <header class="header header-style">
       <div class="header-nav">
         <a href="#" class="home-icon">
-            <img src="https://assets-cdn.github.com/pinned-octocat.svg" alt=""> 
+            <!-- <img src="https://assets-cdn.github.com/pinned-octocat.svg" alt="">  -->
+            <svg aria-hidden="true" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
         </a>
         <nav class="nav nav-style">
           <a href="#">Features</a>
@@ -35,16 +37,49 @@
           <a href="#">Pricing</a>
         </nav>
         <div class="header-action">
-          <label for="search-input" class="search-input">
-            <input type="text" placeholder="Search GitHub">
-          </label>
+          <label for="search-input" class="search-input"></label>
+          <input type="text" placeholder="Search GitHub">
           <a href="#">Sign in</a>
           <span>or</span>
           <a href="#">Sign up</a>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="introduction">
+        <div class="section-container">
+          <div class="github-introduction">
+            <h1>Built for developers</h1>
+            <p>GitHub is a development platform inspired by the way you work. From <strong><a href="#">open source</a></strong> to <strong><a href="#">business</a></strong>, you can host and review code, manage projects, and build software alongside millions of other developers.</p>
+          </div>
+          <div class="reigster-form">
+            <form action="#" method="POST" accept-charset="UTF-8" autocomplete="off">
+              <dl class="form-item">
+                  <dd>
+                    <label for="username" name="user[login]" id="user[login]">Username</label>
+                    <input type="text" placeholder="Pick a username" class="text-input">
+                  </dd>
+              </dl>
+              <dl class="form-item">
+                <dd>
+                  <label for="email" name="user[email]" id="user[email]">Email</label>
+                  <input type="text" placeholder="Your email address" class="text-input">
+                </dd>
+              </dl>
+              <dl class="form-item">
+                <dd>
+                  <label for="password" name="user[password]" id="user[password]">Password</label>
+                  <input type="password" placeholder="Create a password" class="text-input">
+                  <p>Use at least one letter, one numeral, and seven characters.</p>
+                </dd>
+              </dl>
+              <button class="btn btn-primary form-item" type="submit">Sign up for GitHub</button>
+              <p id="reigster-privacy">By clicking "Sign up for GitHub", you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>. We’ll occasionally send you account related emails.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
