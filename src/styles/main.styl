@@ -1,10 +1,14 @@
 @require './button'
 @require './input'
 
+$v-padding = (32/$base-rem)rem
+$h-padding = (40/$base-rem)rem
+
 .introduction {
     background: $soft-black url('https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg') no-repeat
     background-position: center 10%
     background-size: cover
+
     .section-container {
         display: flex
         flex-flow: row nowrap
@@ -26,7 +30,7 @@
 
         h1, a, p {
             font-weight: 300
-            font-size: (26rem/$base-rem)
+            font-size: (26/$base-rem)rem
             text-align: left
         }
 
@@ -37,7 +41,7 @@
         h1 {
             margin-top: -1px
             margin-bottom: 16px
-            font-size: (72rem/$base-rem)
+            font-size: (72/$base-rem)rem
             line-height: 1
         }
 
@@ -57,12 +61,12 @@
 
     .reigster-form {
         flex: 1 1 0
-        padding: 0 (24rem/$base-rem)
+        padding: 0 (24/$base-rem)rem
 
         form {
             background: rgb(250, 251, 252)
             border-radius: $item-border-radius
-            padding: (24rem/$base-rem) 40px
+            padding: (24/$base-rem)rem $h-padding
             width: 380px
             
             > * {
@@ -72,7 +76,7 @@
 
             p {
                 color: rgb(106, 115, 125)
-                font-size: (12rem/16)
+                font-size: (12/$base-rem)rem
             }
             
             #reigster-privacy {
@@ -94,10 +98,70 @@
             }
             label {
                 color: rgb(88, 96, 105)
-                font-size: (14rem/$base-rem)
+                font-size: (14/$base-rem)rem
                 margin-bottom: 5px
             }
         }
     }
 }
 
+.conference {
+    background: $hard-black
+    padding: $v-padding $h-padding
+
+    .conference-container {
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+
+        .conf-logo {
+            padding-top: 1rem
+            padding-right: $h-padding
+
+            img {
+                width: 205px
+            }
+        }
+
+        .conf-description {
+            width: 300px
+
+            img {
+                width: 215px
+            }
+
+            p {
+                color: $white
+                text-align: left
+                margin: 8px 0
+                line-height: 1.5
+            }
+
+            .learn-more {
+                $link-color = #959da5
+
+
+                a {
+                    display: flex
+                    flex-flow: row nowrap
+                    align-items: center
+                    color: $link-color
+                }
+
+                svg {
+                    fill: $link-color
+                    margin-left: 8px
+                }
+            }
+
+            // a {
+            //     &:last-child {
+                    
+            //     }
+            // }
+        }
+    }
+    
+}
