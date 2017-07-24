@@ -1,0 +1,32 @@
+@require './general'
+
+link-style($link-color = $blue) {
+    .arrow-link {
+        margin-bottom: 10px
+
+        a {
+            display: flex
+            flex-flow: row nowrap
+            align-items: center
+            color: $link-color
+        }
+
+        svg {
+            fill: $link-color
+            margin-left: 8px
+        }
+    }
+}
+
+block-center() {
+    display: block
+    margin: 0 auto
+}
+
+container() {
+    block-center()
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: $basic-max-site-width
+}

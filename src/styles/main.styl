@@ -1,22 +1,19 @@
 @require './button'
 @require './input'
+@require './component'
 
 $v-padding = (32/$base-rem)rem
 $h-padding = (40/$base-rem)rem
 
+link-style()
+
 .introduction {
-    background: $soft-black url('https://assets-cdn.github.com/images/modules/site/heroes/simple-codelines.svg') no-repeat
+    background: $soft-black url('/assets/simple-codelines.svg') no-repeat
     background-position: center 10%
     background-size: cover
 
     .section-container {
-        display: flex
-        flex-flow: row nowrap
-        justify-content: center
-        max-width: 1012px
-        margin: 0 auto
-        padding: 100px 0
-        
+        container()
     }
 
     .github-introduction {
@@ -24,25 +21,17 @@ $h-padding = (40/$base-rem)rem
         flex-flow: column nowrap
         justify-content: center
         flex: 2 1 0
-        color: $white
-        font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif
         padding: 0 24px
 
         h1, a, p {
-            font-weight: 300
-            font-size: (26/$base-rem)rem
-            text-align: left
+            -webkit-font-smoothing: antialiased
         }
 
         a, p {
+            font-weight: 300
+            text-align: left
             line-height: 1.5
-        }
-
-        h1 {
-            margin-top: -1px
-            margin-bottom: 16px
-            font-size: (72/$base-rem)rem
-            line-height: 1
+            font-size: (26/$base-rem)rem
         }
 
         p {
@@ -52,8 +41,9 @@ $h-padding = (40/$base-rem)rem
         }
 
         a {
-            color: @color
             border-bottom: 1px solid rgba(255,255,255,0.125)
+            font-weight: normal
+            color: $white
         }
 
     }
@@ -110,11 +100,11 @@ $h-padding = (40/$base-rem)rem
     padding: $v-padding $h-padding
 
     .conference-container {
+        block-center()
         display: flex
         flex-flow: row wrap
         justify-content: center
         align-items: center
-        margin: 0 auto
 
         .conf-logo {
             padding-top: 1rem
@@ -130,6 +120,7 @@ $h-padding = (40/$base-rem)rem
 
             img {
                 width: 215px
+                margin: 0
             }
 
             p {
@@ -139,29 +130,90 @@ $h-padding = (40/$base-rem)rem
                 line-height: 1.5
             }
 
-            .learn-more {
-                $link-color = #959da5
-
-
-                a {
-                    display: flex
-                    flex-flow: row nowrap
-                    align-items: center
-                    color: $link-color
-                }
-
-                svg {
-                    fill: $link-color
-                    margin-left: 8px
-                }
-            }
-
-            // a {
-            //     &:last-child {
-                    
-            //     }
-            // }
+            link-style(#959da5)
         }
     }
     
+}
+
+.feature-team {
+    
+    .feature-team-container {
+        block-center()
+        max-width: $basic-max-site-width
+        padding: 0 16px
+
+        .feature-logo {
+            text-align: center
+            
+            svg {
+                width: 64px
+                padding-bottom: 8px
+            }
+        }
+
+        .feature-team-title {
+            text-align: center
+
+            p {
+                color: $darker-gary
+                width: 66.67%
+                block-center()
+                margin-bottom: 30px
+                font-size: (20/$base-rem)rem
+                line-height: 1.5
+                font-weight: 300
+            }
+        }
+
+        .feature-item {
+            display: flex
+            flex-flow row nowrap
+            justify-content: center
+            align-items: center
+            
+            
+            .h3-text, .text-wrap {
+                flex: 1 1 0
+            }
+
+            .h3-text {
+                order: 0
+
+                p {
+                    font-size: 1rem
+                    line-height: 1.5
+                }
+            }
+
+            &:nth-child(odd) {
+                .text-wrap {
+                    order: 1
+                }
+            }
+
+            &:nth-child(even) {
+                .text-wrap {
+                    order: -1
+                }
+            }
+
+            #home-illo-conversation {
+                padding-right: 32px
+
+                > img {
+                    width: 360px
+                }
+            }
+
+            #home-illo-chaos {
+                padding: 32px
+
+                > img {
+                    width: 426px
+                }
+            }
+        }
+    }
+
 }

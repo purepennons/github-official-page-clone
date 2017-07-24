@@ -1,12 +1,14 @@
 @require './general'
+@require './component'
 
 .header-style {
+    block-center()
     background: $hard-black
     font-size: 1rem
     color: $white
     padding: 1rem 0
-    margin: 0 auto
     width: 100%
+    font-family: $font-family
 
     a {
         color: $white
@@ -14,12 +16,8 @@
 }
 
 .header-nav {
-    display: flex
-    align-items: center
-    justify-content: space-between
-    margin: 0 auto
+    container()
     padding: 0 1rem
-    max-width: 1012px
 
     .home-icon {
         display: inline-block
