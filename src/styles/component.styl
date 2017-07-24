@@ -30,3 +30,38 @@ container() {
     justify-content: space-between
     max-width: $basic-max-site-width
 }
+
+feature-title-description() {
+    p {
+        block-center()
+        color: $darker-gary
+        width: 66.67%
+        margin-bottom: 30px
+        font-size: (20/$base-rem)rem
+        line-height: 1.5
+        font-weight: 300
+    }
+}
+
+feature-description() {
+    p {
+        font-size: 1rem
+        line-height: 1.5
+    }
+}
+
+feature-title() {
+    .feature-logo {
+        text-align: center
+        
+        svg {
+            width: 64px
+            padding-bottom: 8px
+        }
+    }
+
+    .feature-team-title {
+        feature-title-description()
+        text-align: center
+    }
+}
