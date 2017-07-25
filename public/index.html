@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -20,131 +21,251 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>The world's leading software development platform · GitHub</title>
-  </head>
-  <body>
-    <header class="header header-style">
-      <div class="header-nav container">
-        <a href="#" class="home-icon">
-            <svg aria-hidden="true" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-        </a>
-        <nav class="nav nav-style">
-          <a href="#">Features</a>
-          <a href="#">Business</a>
-          <a href="#">Explore</a>
-          <a href="#">Marketplace</a>
-          <a href="#">Pricing</a>
-        </nav>
-        <div class="header-action">
-          <label for="search-input" class="search-input"></label>
-          <input type="text" placeholder="Search GitHub">
-          <a href="#">Sign in</a>
-          <span>or</span>
-          <a href="#">Sign up</a>
+  <title>The world's leading software development platform · GitHub</title>
+</head>
+
+<body>
+  <header class="header header-style">
+    <div class="header-nav container">
+      <a href="#" class="home-icon">
+        <svg aria-hidden="true" height="32" version="1.1" viewBox="0 0 16 16" width="32">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+          />
+        </svg>
+      </a>
+      <nav class="nav nav-style">
+        <a href="#">Features</a>
+        <a href="#">Business</a>
+        <a href="#">Explore</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Pricing</a>
+      </nav>
+      <div class="header-action">
+        <label for="search-input" class="search-input"></label>
+        <input type="text" placeholder="Search GitHub">
+        <a href="#">Sign in</a>
+        <span>or</span>
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="introduction">
+      <div class="section-container container">
+        <div class="github-introduction">
+          <h1>Built for developers</h1>
+          <p>GitHub is a development platform inspired by the way you work. From <strong><a href="#">open source</a></strong>            to <strong><a href="#">business</a></strong>, you can host and review code, manage projects, and build software
+            alongside millions of other developers.</p>
+        </div>
+        <div class="reigster-form">
+          <form action="#" method="POST" accept-charset="UTF-8" autocomplete="off">
+            <dl class="form-item">
+              <dd>
+                <label for="username" name="user[login]" id="user[login]">Username</label>
+                <input type="text" placeholder="Pick a username" class="text-input">
+              </dd>
+            </dl>
+            <dl class="form-item">
+              <dd>
+                <label for="email" name="user[email]" id="user[email]">Email</label>
+                <input type="text" placeholder="Your email address" class="text-input">
+              </dd>
+            </dl>
+            <dl class="form-item">
+              <dd>
+                <label for="password" name="user[password]" id="user[password]">Password</label>
+                <input type="password" placeholder="Create a password" class="text-input">
+                <p>Use at least one letter, one numeral, and seven characters.</p>
+              </dd>
+            </dl>
+            <button class="btn btn-primary form-item" type="submit">Sign up for GitHub</button>
+            <p id="reigster-privacy">By clicking "Sign up for GitHub", you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>.
+              We’ll occasionally send you account related emails.</p>
+          </form>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="introduction">
-        <div class="section-container container">
-          <div class="github-introduction">
-            <h1>Built for developers</h1>
-            <p>GitHub is a development platform inspired by the way you work. From <strong><a href="#">open source</a></strong> to <strong><a href="#">business</a></strong>, you can host and review code, manage projects, and build software alongside millions of other developers.</p>
-          </div>
-          <div class="reigster-form">
-            <form action="#" method="POST" accept-charset="UTF-8" autocomplete="off">
-              <dl class="form-item">
-                  <dd>
-                    <label for="username" name="user[login]" id="user[login]">Username</label>
-                    <input type="text" placeholder="Pick a username" class="text-input">
-                  </dd>
-              </dl>
-              <dl class="form-item">
-                <dd>
-                  <label for="email" name="user[email]" id="user[email]">Email</label>
-                  <input type="text" placeholder="Your email address" class="text-input">
-                </dd>
-              </dl>
-              <dl class="form-item">
-                <dd>
-                  <label for="password" name="user[password]" id="user[password]">Password</label>
-                  <input type="password" placeholder="Create a password" class="text-input">
-                  <p>Use at least one letter, one numeral, and seven characters.</p>
-                </dd>
-              </dl>
-              <button class="btn btn-primary form-item" type="submit">Sign up for GitHub</button>
-              <p id="reigster-privacy">By clicking "Sign up for GitHub", you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>. We’ll occasionally send you account related emails.</p>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="conference">
-        <div class="conference-container container">
-          <div class="conf-logo">
-            <a href="https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=ww-dotcom-universe-20170717">
+    </section>
+    <section class="conference">
+      <div class="conference-container container">
+        <div class="conf-logo">
+          <a href="https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=ww-dotcom-universe-20170717">
               <img src="/assets/universe-logo.png" alt="universe-logo">
             </a>
-          </div>
-          <div class="conf-description">
-            <a href="https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=ww-dotcom-universe-20170717">
+        </div>
+        <div class="conf-description">
+          <a href="https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=ww-dotcom-universe-20170717">
               <img src="/assets/universe-wordmark.png" alt="universe-wordmark">
               <p>Explore a whole new GitHub Universe, October 10-12 in San Francisco.</p>
             </a>
-            <p class="arrow-link learn-more">
-              <a href="https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=ww-dotcom-universe-20170717">
+          <p class="arrow-link learn-more">
+            <a href="https://githubuniverse.com/?utm_source=github&utm_medium=banner&utm_campaign=ww-dotcom-universe-20170717">
                 Learn more
                 <svg aria-hidden="true" class="octicon octicon-chevron-right ml-2 v-align-text-bottom" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"></path></svg>
               </a>
-            </p>
-          </div>
+          </p>
         </div>
-      </section>
-      <section class="feature-team">
-        <div class="feature-team-container container">
+      </div>
+    </section>
+    <section class="feature-team feature-section">
+      <div class="feature-team-container feature-container">
+        <div class="feature-title">
           <div class="feature-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.2 59.33" class="d-block mx-auto mb-2" width="64"><title>teams</title><path d="M5.49 47.04h-.14a1 1 0 0 1-.86-1.12 9.61 9.61 0 0 1 16.82-4.87 1 1 0 1 1-1.52 1.3 7.61 7.61 0 0 0-13.31 3.84 1 1 0 0 1-.99.85z" fill="#79b8ff"></path><path d="M13.99 39.67a7.12 7.12 0 1 1 7.12-7.12 7.13 7.13 0 0 1-7.12 7.12zm0-12.24a5.12 5.12 0 1 0 5.12 5.12 5.12 5.12 0 0 0-5.12-5.11zm46.24 19.61a1 1 0 0 1-1-.87 7.61 7.61 0 0 0-13.31-3.84 1 1 0 1 1-1.52-1.3 9.61 9.61 0 0 1 16.82 4.87 1 1 0 0 1-.86 1.13h-.14z" fill="#79b8ff"></path><path d="M51.71 39.67a7.12 7.12 0 1 1 7.12-7.12 7.13 7.13 0 0 1-7.12 7.12zm0-12.24a5.12 5.12 0 1 0 5.12 5.12 5.12 5.12 0 0 0-5.12-5.11z" fill="#79b8ff"></path><path d="M43.62 59.34a1 1 0 0 1-1-.89 9.73 9.73 0 0 0-9.78-8.59 9.87 9.87 0 0 0-9.79 8.47 1.01 1.01 0 1 1-2-.27 11.88 11.88 0 0 1 11.77-10.21 11.73 11.73 0 0 1 11.79 10.39 1 1 0 0 1-.89 1.1h-.11z" fill="#2088ff"></path><path d="M32.84 49.85a8.76 8.76 0 1 1 8.76-8.76 8.77 8.77 0 0 1-8.76 8.76zm0-15.52a6.76 6.76 0 1 0 6.76 6.76 6.77 6.77 0 0 0-6.76-6.75z" fill="#2088ff"></path><path d="M32.84 25.47a7.12 7.12 0 1 1 7.12-7.12 7.13 7.13 0 0 1-7.12 7.12zm0-12.24a5.12 5.12 0 1 0 5.12 5.12 5.12 5.12 0 0 0-5.12-5.11z" fill="#79b8ff"></path><path d="M39.86 29.08a1 1 0 0 1-.82-.42 7.61 7.61 0 0 0-12.39 0 1 1 0 0 1-1.63-1.16 9.61 9.61 0 0 1 15.65 0 1 1 0 0 1-.81 1.58z" fill="#79b8ff"></path><path d="M47.35 22.33a1 1 0 0 1-1-1V5.8a5.81 5.81 0 0 1 5.8-5.8h8.24a5.81 5.81 0 0 1 5.8 5.8v5.05c0 4-2.48 6.35-6.64 6.35h-6.67l-4.83 4.83a1 1 0 0 1-.7.3zm4.8-20.32a3.8 3.8 0 0 0-3.8 3.8v13.11l3.41-3.41a1 1 0 0 1 .71-.29h7.08c3.08 0 4.64-1.46 4.64-4.35V5.82a3.8 3.8 0 0 0-3.8-3.8h-8.24zM18.84 22.33a1 1 0 0 1-.71-.29l-4.83-4.8H6.63c-4.16 0-6.64-2.37-6.64-6.35V5.84a5.81 5.81 0 0 1 5.8-5.8h8.24a5.81 5.81 0 0 1 5.8 5.8v15.52a1 1 0 0 1-.99.97zm-13-20.32a3.8 3.8 0 0 0-3.8 3.8v5.05c0 2.88 1.56 4.35 4.64 4.35h7.03a1 1 0 0 1 .71.29l3.41 3.41V5.8a3.81 3.81 0 0 0-3.8-3.8H5.79z" fill="#2088ff"></path><circle cx="53.75" cy="8.66" r="1.41" fill="#2088ff"></circle><circle cx="59.11" cy="8.66" r="1.41" fill="#2088ff"></circle><circle cx="7.24" cy="8.66" r="1.41" fill="#2088ff"></circle><circle cx="12.6" cy="8.66" r="1.41" fill="#2088ff"></circle></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.2 59.33" class="d-block mx-auto mb-2" width="64">
+              <title>teams</title>
+              <path d="M5.49 47.04h-.14a1 1 0 0 1-.86-1.12 9.61 9.61 0 0 1 16.82-4.87 1 1 0 1 1-1.52 1.3 7.61 7.61 0 0 0-13.31 3.84 1 1 0 0 1-.99.85z"
+                fill="#79b8ff"></path>
+              <path d="M13.99 39.67a7.12 7.12 0 1 1 7.12-7.12 7.13 7.13 0 0 1-7.12 7.12zm0-12.24a5.12 5.12 0 1 0 5.12 5.12 5.12 5.12 0 0 0-5.12-5.11zm46.24 19.61a1 1 0 0 1-1-.87 7.61 7.61 0 0 0-13.31-3.84 1 1 0 1 1-1.52-1.3 9.61 9.61 0 0 1 16.82 4.87 1 1 0 0 1-.86 1.13h-.14z"
+                fill="#79b8ff"></path>
+              <path d="M51.71 39.67a7.12 7.12 0 1 1 7.12-7.12 7.13 7.13 0 0 1-7.12 7.12zm0-12.24a5.12 5.12 0 1 0 5.12 5.12 5.12 5.12 0 0 0-5.12-5.11z"
+                fill="#79b8ff"></path>
+              <path d="M43.62 59.34a1 1 0 0 1-1-.89 9.73 9.73 0 0 0-9.78-8.59 9.87 9.87 0 0 0-9.79 8.47 1.01 1.01 0 1 1-2-.27 11.88 11.88 0 0 1 11.77-10.21 11.73 11.73 0 0 1 11.79 10.39 1 1 0 0 1-.89 1.1h-.11z"
+                fill="#2088ff"></path>
+              <path d="M32.84 49.85a8.76 8.76 0 1 1 8.76-8.76 8.77 8.77 0 0 1-8.76 8.76zm0-15.52a6.76 6.76 0 1 0 6.76 6.76 6.77 6.77 0 0 0-6.76-6.75z"
+                fill="#2088ff"></path>
+              <path d="M32.84 25.47a7.12 7.12 0 1 1 7.12-7.12 7.13 7.13 0 0 1-7.12 7.12zm0-12.24a5.12 5.12 0 1 0 5.12 5.12 5.12 5.12 0 0 0-5.12-5.11z"
+                fill="#79b8ff"></path>
+              <path d="M39.86 29.08a1 1 0 0 1-.82-.42 7.61 7.61 0 0 0-12.39 0 1 1 0 0 1-1.63-1.16 9.61 9.61 0 0 1 15.65 0 1 1 0 0 1-.81 1.58z"
+                fill="#79b8ff"></path>
+              <path d="M47.35 22.33a1 1 0 0 1-1-1V5.8a5.81 5.81 0 0 1 5.8-5.8h8.24a5.81 5.81 0 0 1 5.8 5.8v5.05c0 4-2.48 6.35-6.64 6.35h-6.67l-4.83 4.83a1 1 0 0 1-.7.3zm4.8-20.32a3.8 3.8 0 0 0-3.8 3.8v13.11l3.41-3.41a1 1 0 0 1 .71-.29h7.08c3.08 0 4.64-1.46 4.64-4.35V5.82a3.8 3.8 0 0 0-3.8-3.8h-8.24zM18.84 22.33a1 1 0 0 1-.71-.29l-4.83-4.8H6.63c-4.16 0-6.64-2.37-6.64-6.35V5.84a5.81 5.81 0 0 1 5.8-5.8h8.24a5.81 5.81 0 0 1 5.8 5.8v15.52a1 1 0 0 1-.99.97zm-13-20.32a3.8 3.8 0 0 0-3.8 3.8v5.05c0 2.88 1.56 4.35 4.64 4.35h7.03a1 1 0 0 1 .71.29l3.41 3.41V5.8a3.81 3.81 0 0 0-3.8-3.8H5.79z"
+                fill="#2088ff"></path>
+              <circle cx="53.75" cy="8.66" r="1.41" fill="#2088ff"></circle>
+              <circle cx="59.11" cy="8.66" r="1.41" fill="#2088ff"></circle>
+              <circle cx="7.24" cy="8.66" r="1.41" fill="#2088ff"></circle>
+              <circle cx="12.6" cy="8.66" r="1.41" fill="#2088ff"></circle>
+            </svg>
             <h6>GitHub for teams</h6>
           </div>
-          <div class="feature-team-title">
+          <div class="feature-title-and-description">
             <h2>A better way to work together</h2>
-            <p>GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.</p>
+            <p>GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the
+              way.
+            </p>
             <button class="sign-up-team btn">Sign up your team</button>
           </div>
-          <div class="feature-team-introduction">
-            <div class="feature-item">
-              <div class="h3-text">
-                <h3>Write better code</h3>
-                <p>Collaboration makes perfect. The conversations and code reviews that happen in Pull Requests help your team share the weight of your work and improve the software you build.</p>
-                <p class="arrow-link">
-                  <a href="#">
+        </div>
+        <div class="feature-team-introduction">
+          <div class="feature-item">
+            <div class="h3-text">
+              <h3>Write better code</h3>
+              <p>Collaboration makes perfect. The conversations and code reviews that happen in Pull Requests help your team
+                share the weight of your work and improve the software you build.</p>
+              <p class="arrow-link">
+                <a href="#">
                     Learn about code review on GitHub
                     <svg aria-hidden="true" class="octicon octicon-chevron-right ml-2 v-align-text-bottom" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"></path></svg>
                   </a>
-                </p>
-              </div>
-              <div class="text-wrap" id="home-illo-conversation">
-                <img src="/assets/home-illo-conversation.svg" alt="home-illo-conversation">
-              </div>
+              </p>
             </div>
-            <div class="feature-item">
-              <div class="h3-text">
-                <h3>Manage your chaos</h3>
-                <p>Take a deep breath. On GitHub, project management happens in Issues and Projects, right alongside your code. All you have to do is mention a teammate to get them involved.</p>
-                <p class="arrow-link">
-                  <a href="#">
+            <div class="text-wrap" id="home-illo-conversation">
+              <img src="/assets/home-illo-conversation.svg" alt="home-illo-conversation">
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="h3-text">
+              <h3>Manage your chaos</h3>
+              <p>Take a deep breath. On GitHub, project management happens in Issues and Projects, right alongside your code.
+                All you have to do is mention a teammate to get them involved.</p>
+              <p class="arrow-link">
+                <a href="#">
                     Learn about project management on GitHub
                     <svg aria-hidden="true" class="octicon octicon-chevron-right ml-2 v-align-text-bottom" height="16" version="1.1" viewBox="0 0 8 16" width="8"><path fill-rule="evenodd" d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z"></path></svg>
                   </a>
-                </p>
-              </div>
-              <div class="text-wrap" id="home-illo-chaos">
-                <img src="/assets/home-illo-chaos.svg" alt="home-illo-chaos">
-              </div>
+              </p>
+            </div>
+            <div class="text-wrap" id="home-illo-chaos">
+              <img src="/assets/home-illo-chaos.svg" alt="home-illo-chaos">
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+      </div>
+    </section>
+    <section class="feature-work feature-section">
+      <div class="feature-work-container feature-container">
+        <div class="feature-title">
+          <div class="feature-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.1 59.57" class="d-block mx-auto mb-2" width="64">
+              <title>security-admin</title>
+              <path d="M34.27 51.67H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h48.3a3 3 0 0 1 3 3v22.11a1 1 0 0 1-2 0V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v45.67a1 1 0 0 0 1 1h31.27a1 1 0 1 1 0 2z"
+                fill="#79b8ff"></path>
+              <path d="M11.1 16.85a1 1 0 0 1-.71-.29l-2.85-2.85a1 1 0 0 1 1.41-1.41l2.14 2.14 5-5a1 1 0 0 1 1.42 1.4l-5.66 5.75a1.2 1.2 0 0 1-.75.26zM62.1 59.57H44.3a2.08 2.08 0 0 1-2-2v-13.8a1.93 1.93 0 0 1 2-2h17.8a1.93 1.93 0 0 1 2 2v13.8a1.93 1.93 0 0 1-2 2zm-17.8-2.06l17.8.06v-13.8H44.3v13.74z"
+                fill="#2088ff"></path>
+              <path d="M59.9 43.07h-2v-4.3a4.8 4.8 0 0 0-9.6 0v4.3h-2v-4.3a6.8 6.8 0 0 1 13.6 0v4.3z" fill="#2088ff"></path>
+              <circle cx="53.3" cy="49.67" r="2.2" fill="#2088ff"></circle>
+              <path d="M53.3 54.57a1 1 0 0 1-1-1v-2.9a1 1 0 0 1 2 0v2.9a1 1 0 0 1-1 1z" fill="#2088ff"></path>
+              <path d="M43.18 11.48H23.92a1 1 0 1 1 0-2h19.27a1 1 0 0 1-.01 2zM34.27 17.1H23.92a1 1 0 1 1 0-2h10.36a1 1 0 1 1-.01 2z" fill="#79b8ff"></path>
+              <path d="M11.1 41.77a1 1 0 0 1-.71-.29l-2.85-2.85a1 1 0 0 1 1.41-1.41l2.14 2.14 5-5a1 1 0 0 1 1.42 1.4l-5.66 5.75a1.14 1.14 0 0 1-.75.26z"
+                fill="#2088ff"></path>
+              <path d="M34.27 36.4H23.92a1 1 0 1 1 0-2h10.36a1 1 0 1 1-.01 2zM34.27 42.02H23.92a1 1 0 1 1 0-2h10.36a1 1 0 1 1-.01 2zM43.4 26.83H1.48a1 1 0 0 1 0-2H43.4a1 1 0 0 1 0 2z"
+                fill="#79b8ff"></path>
+            </svg>
+            <h6>Security and administration</h6>
+          </div>
+          <div class="feature-title-and-description">
+            <h2>Boxes? Check.</h2>
+            <p>We worried about your administrative and security needs so you don’t have to. From flexible hosting to authentication
+              options, GitHub can help you meet your team’s requirements.
+            </p>
+            <button class="sign-up-team btn">Learn about GitHub for Business</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature-integrations feature-section">
+      <div class="feature-integrations-container feature-container">
+        <div class="feature-title">
+          <div class="feature-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 58.5 58.7" class="d-block mx-auto mb-2" width="72">
+              <title>integrations</title>
+              <path d="M41.6 15.6l-1.4-1.4a1 1 0 1 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.4zM33.9 7.9a1 1 0 1 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.4zM27.9 26.6a1 1 0 0 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.4zM21.6 20.2a1 1 0 0 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.4zM15.4 38.7a1 1 0 0 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.4zM9.3 32.7a1 1 0 1 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.4z"
+                fill="#6bbcff"></path>
+              <path d="M26.6 13.4V1a.94.94 0 0 0-1-1H1a.94.94 0 0 0-1 1v24.8a.94.94 0 0 0 1 1h12.4a.94.94 0 0 0 1-1V14.4h11.2a1.08 1.08 0 0 0 1-1zm-2-1H13.4a.94.94 0 0 0-1 1v11.4H2V2h22.6v10.4zM58.2 19.9a.91.91 0 0 0-.7-.3H45.1a.94.94 0 0 0-1 1v11.3H33.9a1.9 1.9 0 0 0-1.9 1.9v10.6H21.5a1.9 1.9 0 0 0-1.9 1.9v10.5a1.9 1.9 0 0 0 1.9 1.9h36a.94.94 0 0 0 1-1V20.6a.91.91 0 0 0-.3-.7zm-1.7 1.7v22.8H46.1V21.7zM44.1 34v21.1L33.9 44.9 33.8 34h10.3zM21.5 46.4h11l10.4 10.4H21.5V46.4zm24.6 10.3V46.4h10.4v10.4z"
+                fill="#008fff"></path>
+            </svg>
+            <h6>Integrations</h6>
+          </div>
+          <div class="feature-title-and-description">
+            <h2>Build on GitHub</h2>
+            <p>Customize your process with GitHub apps and an intuitive API. Integrate the tools you already use or discover
+              new favorites to create a happier, more efficient way of working.
+            </p>
+            <button class="sign-up-team btn">Learn about integrations</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature-community feature-section">
+      <div class="feature-community-container feature-container">
+        <div class="feature-title">
+          <div class="feature-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 69.41 57.98" class="d-block mx-auto mb-2" width="72">
+              <title>open-source</title>
+              <path d="M25.21 56.35a1 1 0 0 1-.93-1.33 3.51 3.51 0 0 0 .22-1.26 4.52 4.52 0 0 0-4.09-4.48 1 1 0 0 1-.9-1v-4.1a5.78 5.78 0 0 0-.51-2.53 1.002 1.002 0 0 1 1.81-.86 7.76 7.76 0 0 1 .74 3.35v3.29a6.5 6.5 0 0 1 5 6.31 5.46 5.46 0 0 1-.36 2 1 1 0 0 1-.98.61zM49.35 6.26a1 1 0 0 1-.53-.12 26.91 26.91 0 0 0-22.43-2.86 1.001 1.001 0 0 1-.6-1.91 28.92 28.92 0 0 1 24.09 3 1 1 0 0 1-.53 1.89z"
+                fill="#79b8ff"></path>
+              <path d="M25.21 56.35a1 1 0 0 1-.34-.06 29.61 29.61 0 0 1-11.11-7.15 1 1 0 1 1 1.44-1.39 27.59 27.59 0 0 0 10.35 6.69 1 1 0 0 1-.34 1.91zM6.7 27.48h-.09a1 1 0 0 1-.9-1.09 28.62 28.62 0 0 1 .76-4.42 1 1 0 0 1 1.94.49 26.65 26.65 0 0 0-.71 4.11 1 1 0 0 1-1 .91zM49.59 53.56a1 1 0 0 1-.59-1.84 26.93 26.93 0 0 0 11.81-16.7 1.024 1.024 0 0 1 2 .44 29 29 0 0 1-12.7 17.91 1 1 0 0 1-.52.19zM62.45 28.89a1 1 0 0 1-1-1 26.9 26.9 0 0 0-.78-5.47 1 1 0 1 1 1.94-.49 28.88 28.88 0 0 1 .84 5.88 1 1 0 0 1-1 1v.08z"
+                fill="#79b8ff"></path>
+              <path d="M61.78 36.28h-.19a1 1 0 0 1-.79-1.14 32 32 0 0 0 .66-6v-1.2a1 1 0 1 1 2 0v1.08a34 34 0 0 1-.69 6.43 1 1 0 0 1-.99.83zM34.52 58.02a28.67 28.67 0 0 1-9.74-1.69 1 1 0 0 1 .55-1.92h.12a26.93 26.93 0 0 0 23.6-2.68 1 1 0 1 1 1.06 1.67 28.75 28.75 0 0 1-15.59 4.62zM19 29.65a1 1 0 0 1-.8-1.63 8 8 0 0 0 1.91-5.21 1 1 0 0 1 2 0 10.09 10.09 0 0 1-2.36 6.49 1 1 0 0 1-.75.35z"
+                fill="#79b8ff"></path>
+              <path d="M62.45 28.89h-8a8.27 8.27 0 0 1-4.54-1.34h-5.6a4.36 4.36 0 0 1 0-8.72h2a8.25 8.25 0 0 1 1.8-3.69 1 1 0 1 1 1.53 1.29 6.22 6.22 0 0 0-1.46 3.48 1 1 0 0 1-1 .91h-2.87a2.36 2.36 0 0 0 0 4.72h6a1 1 0 0 1 .6.2 6.14 6.14 0 0 0 3.62 1.14h8a1.006 1.006 0 0 1-.08 2.01zM49.59 53.56a1 1 0 0 1-.74-.32 7.79 7.79 0 0 1-2.09-5.29v-.93h-.43a8 8 0 0 1 0-16h9.5a8 8 0 0 1 6.8 3.83 1 1 0 0 1-1.7 1 6 6 0 0 0-5.1-2.83h-9.5a6 6 0 0 0 0 12h1.44a1 1 0 0 1 1 1v1.92a5.79 5.79 0 0 0 1.56 3.93 1 1 0 0 1-.74 1.69z"
+                fill="#79b8ff"></path>
+              <path d="M14.69 45.59a7.25 7.25 0 0 1-6.58-3.67H2.74A2.82 2.82 0 0 1 0 39.09v-6.53a2.57 2.57 0 0 1 .68-1.93 2.76 2.76 0 0 1 2.05-.9h11.53A2.75 2.75 0 0 1 17 32.5v6.58a2.82 2.82 0 0 1-2.73 2.83h-.55c.43 1.57 1.32 1.62 1.75 1.64a1 1 0 0 1 0 2 6.35 6.35 0 0 1-.78.04zM2.74 31.74a.75.75 0 0 0-.57.24.63.63 0 0 0-.16.49v6.63a.82.82 0 0 0 .73.83h6a1 1 0 0 1 .92.61A4.7 4.7 0 0 0 12 43.02a7.7 7.7 0 0 1-.44-2 1 1 0 0 1 .91-1.09h1.82a.82.82 0 0 0 .71-.82v-6.55a.75.75 0 0 0-.68-.82H2.74zM54.75 21.62H54a1 1 0 0 1 0-2c.38 0 1.28-.13 1.71-1.75h-.6a2.73 2.73 0 0 1-2.68-2.73V8.69a2.77 2.77 0 0 1 2.68-2.8h11.38a3 3 0 0 1 2.92 2.71v6.54a2.73 2.73 0 0 1-2.73 2.73h-5.23a7.42 7.42 0 0 1-6.7 3.75zm.36-13.73a.79.79 0 0 0-.73.81v6.44a.72.72 0 0 0 .71.73h1.75a1 1 0 0 1 1 1v.09a7.76 7.76 0 0 1-.47 2.12 4.87 4.87 0 0 0 2.49-2.6 1 1 0 0 1 .92-.61h5.86a.72.72 0 0 0 .76-.68v-6.5a1 1 0 0 0-.92-.81H55.11zM18 9.61a1.52 1.52 0 0 0-1.5-1.54 1.48 1.48 0 0 0-1.44 1c0 .1-.1.1-.19 0a1.48 1.48 0 0 0-1.44-1 1.52 1.52 0 0 0-1.54 1.5c0 1.63 1.73 3.07 2.59 3.74a.72.72 0 0 0 .86 0c.89-.54 2.66-2.07 2.66-3.7z"
+                fill="#2088ff"></path>
+              <path d="M63.11 12.88h-4.47a1 1 0 0 1 0-2h4.47a1 1 0 1 1 0 2zM10.71 36.73H5.8a1 1 0 0 1 0-2h4.91a1 1 0 0 1 0 2zM14.79 22.27a1 1 0 0 1-.9-.64l-1.52-3.89H9.32a2.81 2.81 0 0 1-2.73-2.81v-9a2.73 2.73 0 0 1 2.67-2.79h11.39a2.73 2.73 0 0 1 2.73 2.73v9a2.81 2.81 0 0 1-2.73 2.81h-3.11l-1.84 4a1 1 0 0 1-.91.59zM9.32 5.14a.72.72 0 0 0-.73.71v9a.79.79 0 0 0 .73.81h3.79a1 1 0 0 1 .93.64l.89 2.32L16 16.25a1 1 0 0 1 1-.58h3.74a.79.79 0 0 0 .73-.81v-9a.72.72 0 0 0-.72-.72H9.32z"
+                fill="#2088ff"></path>
+            </svg>
+            <h6>Community</h6>
+          </div>
+          <div class="feature-title-and-description">
+            <h2>Welcome home, 
+              <br>
+              developers</h2>
+            <p>GitHub is home to the world’s largest community of developers and their projects...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>

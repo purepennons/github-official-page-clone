@@ -51,17 +51,19 @@ feature-description() {
 }
 
 feature-title() {
-    .feature-logo {
-        text-align: center
-        
-        svg {
-            width: 64px
-            padding-bottom: 8px
+    .feature-title {
+        .feature-logo {
+            text-align: center
+            
+            svg {
+                width: 64px
+                padding-bottom: 8px
+            }
         }
-    }
 
-    .feature-team-title {
-        feature-title-description()
-        text-align: center
+        .feature-title-and-description {
+            feature-title-description()
+            text-align: center
+        }
     }
 }
