@@ -139,7 +139,7 @@ link-style()
 .feature-team {
     
     .feature-team-container {
-        
+
         .feature-item {
             display: flex
             flex-flow row nowrap
@@ -169,18 +169,42 @@ link-style()
 
             #home-illo-conversation {
                 padding-right: 32px
+                width: 490px
 
                 > img {
+                    max-width: 100%
                     width: 360px
                 }
             }
 
             #home-illo-chaos {
                 padding: 32px
+                width: 490px
 
                 > img {
+                    max-width: 100%
                     width: 426px
                 }
+            }
+        }
+    }
+}
+
+.feature-work {
+    .feature-work-container {
+
+        .feature-items, #home-illo-business {
+            display: inline-block
+            max-width: 49.7%
+            width: 490px
+        }
+
+        #home-illo-business {
+            padding-left: 32px
+            margin-bottom: 24px
+
+            > img {
+                max-width: 100%
             }
         }
     }
