@@ -192,19 +192,153 @@ link-style()
 
 .feature-work {
     .feature-work-container {
+        padding-left: 0
+        padding-right: 0
 
         .feature-items, #home-illo-business {
             display: inline-block
-            max-width: 49.7%
+            max-width: 50%
             width: 490px
         }
 
         #home-illo-business {
             padding-left: 32px
-            margin-bottom: 24px
+            margin-bottom: 10px
 
             > img {
                 max-width: 100%
+            }
+        }
+    }
+}
+
+.feature-integrations {
+    .feature-integrations-container {
+
+        .feature-title {
+            padding: 40px 0
+        }
+
+        .feature-items {
+
+            .integration-logos {
+                $logo-width = 96px
+                $logo-height = 96px
+                $label-background-color = rgba(27, 31, 35, 0.8)
+                $labe-color = $white
+
+                flex-h-v-center()
+                flex-flow: row wrap
+                height: ($logo-height + ($logo-height/2))
+                margin:10px auto 40px auto
+
+                .integration-logo {
+                    flex-h-v-center()
+                    width: $logo-width
+                    height: $logo-height
+                    border-radius: (@width/2)px
+                    margin: 0 16px
+                    position: relative
+
+                    img {
+                        max-width: 55%
+                        max-height: 55%
+                    }
+
+                    &:hover {
+                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+                    }
+                }
+
+                div {
+                    &:nth-child(odd) {
+                        align-self: flex-start
+                    }
+
+                    &:nth-child(even) {
+                        align-self: flex-end
+                    }
+                }
+
+                #slackhq-logo {
+                    background: #553958
+
+                    &:hover {
+                        pop_label('Slack', $labe-color, $label-background-color)
+                    }
+                }
+
+                #zenhubio-logo {
+                    background: #364e98
+                    
+                    &:hover {
+                        pop_label('ZenHub', $labe-color, $label-background-color)
+                    }
+                }
+
+                #travis-ci-logo {
+                    background: #eff9f9
+
+                    &:hover {
+                        pop_label('Travis CI', $labe-color, $label-background-color)
+                    }
+                }
+
+                #atom-logo {
+                    background: #5fb57d
+                    
+                    &:hover {
+                        pop_label('Atom', $labe-color, $label-background-color)
+                    }57d
+                }
+
+                #circleci-logo {
+                    background: #022531
+
+                    &:hover {
+                        pop_label('Circle CI', $labe-color, $label-background-color)
+                    }
+                }
+
+                #codeship-logo {
+                    background: #f3f6fb
+
+                    &:hover {
+                        pop_label('Codeship', $labe-color, $label-background-color)
+                    }
+                }
+
+                #codeclimate-logo {
+                    background: #303030
+
+                    &:hover {
+                        pop_label('Code Climate', $labe-color, $label-background-color)
+                    }
+                }
+
+
+            }
+
+            .integration-other-description {
+                block-center()
+                font-size: (14/$base-rem)rem
+                text-align: center
+                padding: 40px 0
+                max-width: 66.667%
+                line-height: 1.5
+                
+                .arrow-link {
+                    container()
+                    font-size: 1rem
+                    margin: 10px auto
+                }
+
+                p{
+                    &:first-child {
+                        margin: 8px auto
+                        max-width: 50%
+                    }
+                }
             }
         }
     }
