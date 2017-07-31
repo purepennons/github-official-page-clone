@@ -350,12 +350,19 @@ link-style()
     .feature-community-container {
         .feature-items {
             .hot-project-owner-introduction {
-                overflow: auto
+                overflow-x: auto
                 white-space: nowrap
+                height: 500px
 
                 .project-owner {
                     display: inline-block
+                    position: relative
+
+                    &:nth-child(odd) {
+                        top: 20px
+                    }
                 }
+
             }
         }
     }
